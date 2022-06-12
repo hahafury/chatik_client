@@ -1,0 +1,37 @@
+import {ICustomFile} from "../../types/app";
+
+export enum AUTH_ACTIONS {
+	ACTION_AUTH_REQUEST= "ACTION_AUTH_REQUEST",
+	ACTION_AUTH_LOGIN = "ACTION_AUTH_LOGIN",
+	ACTION_AUTH_LOGIN_SUCCESS = "ACTION_AUTH_LOGIN_SUCCESS",
+	ACTION_AUTH_SIGNUP = "ACTION_AUTH_SIGNUP",
+	ACTION_AUTH_SIGNUP_SUCCESS = "ACTION_AUTH_SIGNUP_SUCCESS",
+	ACTION_AUTH_SUCCESS = "ACTION_AUTH_SUCCESS",
+	ACTION_AUTH_ERROR = "ACTION_AUTH_ERROR",
+	ACTION_AUTH_CLEAR_ERROR = "ACTION_AUTH_CLEAR_ERROR",
+	ACTION_AUTH_LOGOUT = "ACTION_AUTH_LOGOUT",
+	ACTION_AUTH_GET_USER = "ACTION_AUTH_GET_USER",
+	ACTION_AUTH_GET_USER_SUCCESS = "ACTION_AUTH_GET_USER_SUCCESS",
+	ACTION_AUTH_UPDATE_USER = "ACTION_AUTH_UPDATE_USER",
+	ACTION_AUTH_UPDATE_USER_SUCCESS = "ACTION_AUTH_UPDATE_USER_SUCCESS",
+}
+
+export interface ILogin {
+	email: string;
+	password: string;
+	rememberMe?: string[];
+}
+
+export interface ISignup {
+	username: string;
+	email: string;
+	password: string;
+	phone: string;
+}
+
+export interface IUpdateUserData {
+	username?: string;
+	photo?: ICustomFile;
+	phone?: string;
+	bio?: string;
+}

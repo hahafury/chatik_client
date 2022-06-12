@@ -1,0 +1,30 @@
+.imagePreviewWrapper
+	position: relative
+	overflow: hidden
+	border-radius: 6px
+
+	.actionButton
+		position: absolute
+		bottom: -25%
+		left: -7%
+		transform: translate(50%, 50%)
+		color: #FFFFFF
+		font-size: 40px !important
+		transition: bottom 0.35s ease-in-out
+
+
+	.actionButtonShow
+		bottom: 50%
+
+	img
+		width: 70px
+		height: 70px
+		object-fit: contain
+		transition: filter 0.35s ease-in-out
+
+.imagePreviewWrapper + .imagePreviewWrapper
+	margin-left: 12px
+
+
+.hovered
+	filter: blur(5px)

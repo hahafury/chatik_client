@@ -1,0 +1,52 @@
+.chatSendMessage
+	flex: 0 0 auto
+	padding: 16px
+	background-color: #dcdcdc
+	border-top: 1px solid #dadada1a
+	position: relative
+	z-index: 0
+
+	form
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		.photoAction
+			color: #858585
+
+			&:hover
+				cursor: pointer
+
+			input
+				width: calc(100% - 100px)
+				height: 100%
+				padding: 0 16px
+				border: 0
+				border-top-left-radius: 0.35rem
+				border-bottom-left-radius: 0.35rem
+				overflow: hidden
+
+
+			input:focus-visible
+				border: none
+				outline: none !important
+
+			.sendMessageButton
+				height: 100%
+				width: 100px
+				background-color: #274684
+				color: white
+				display: flex
+				justify-content: center
+				align-items: center
+				border-top-right-radius: 0.35rem
+				border-bottom-right-radius: 0.35rem
+
+			.emojiPickerButton
+				background-color: transparent
+				position: absolute
+				right: 120px
+
+				svg
+					font-size: 28px !important

@@ -1,0 +1,84 @@
+.imagesSliderWrapper
+	height: 100vh
+	width: 100vw
+	display: flex
+	position: relative
+	flex-wrap: wrap
+	padding-top: 8%
+	justify-content: center
+
+	.exitAction
+		width: 10%
+		height: 10%
+		color: white
+		background-color: rgba(0, 0, 0, 0)
+		position: absolute
+		display: flex
+		right: 0
+		top: 0
+		justify-content: center
+		align-items: center
+		transition: background-color 0.35s ease-in-out
+
+		svg
+			font-size: 30px
+
+		&:hover
+			background-color: rgba(0, 0, 0, 0.4)
+			cursor: pointer
+
+	.imgBlock
+		width: 80%
+		height: 85%
+		position: relative
+
+		.mainImg
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+		.imagesListWrapper
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: -10%
+			width: 100%
+
+
+			.imagesListItem
+				height: 100px
+				width: 60px
+				opacity: 0.6
+				cursor: pointer
+				object-fit: contain
+				transition: width 0.35s ease-in-out
+
+				& + .imagesListItem
+					margin-left: 10px
+
+			.imagesListItem_active
+				height: 100px
+				width: 120px
+				opacity: 1
+				cursor: default
+
+	.actionButton
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 90%
+		width: 10%
+		background-color: rgba(0, 0, 0, 0)
+		cursor: pointer
+		transition: background-color 0.35s ease-in-out
+
+		svg
+			font-size: 30px
+			color: lightgray
+
+		&:hover
+			background-color: rgba(0, 0, 0, 0.4)
+			opacity: 0.9
+
+

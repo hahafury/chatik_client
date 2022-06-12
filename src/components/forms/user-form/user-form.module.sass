@@ -1,0 +1,88 @@
+@font-face
+	font-family: 'Roboto Light'
+	src: url("../../../../public/fonts/Roboto/Roboto-Light.woff2") format('woff2')
+
+@font-face
+	font-family: 'Roboto Regular'
+	src: url("../../../../public/fonts/Roboto/Roboto-Regular.woff2") format('woff2')
+
+.userFormWrapper
+	width: 100%
+
+	form
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		font-family: "Roboto Light"
+
+		.error
+			color: red
+			font-size: 10px
+			text-transform: uppercase
+
+		.wrapperProfileImg
+			margin-top: -8px
+			margin-right: 16px
+			flex: 0 0 50px
+			position: relative
+			height: 75px
+
+			.profileImg
+				border-radius: 60px
+				width: 75px
+				height: 75px
+
+			.actionImgWrapper
+				width: 25px
+				height: 25px
+				border-radius: 50px
+				background-color: #8774e1
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				bottom: -5px
+				right: -10px
+
+				&:hover
+					cursor: pointer
+
+				.actionImg
+					font-size: 20px
+					color: #FFFFFF
+
+
+		.username
+			flex: 1 1 60%
+
+		.bio
+			margin-top: 24px
+			flex: 0 1 100%
+
+			& > div + div
+				margin-top: 16px!important
+
+		.actionButton
+			position: absolute
+			bottom: -50px
+			right: 70px
+			height: 50px
+			width: 50px
+			background-color: rgb(135 116 225)
+			border-right: 30px
+			border-radius: 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: bottom 0.35s ease-in-out
+
+			&:hover
+				cursor: pointer
+
+			svg
+				font-size: 30px
+				color: #FFFFFF
+
+		.btnShown
+			bottom: 20px
+			left: 145px

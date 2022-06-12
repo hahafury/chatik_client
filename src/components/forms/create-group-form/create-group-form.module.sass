@@ -1,0 +1,67 @@
+.createGroupWrapper
+	width: 800px
+	height: 500px
+	display: flex
+	justify-content: space-between
+
+	.createGroupContacts
+		height: 100%
+		width: 325px
+		overflow-y: scroll
+		padding: 8px
+		padding-top: 13px
+
+	.createGroupForm
+		width: 484px
+		height: 100%
+		padding: 8px
+
+		form
+			width: 100%
+			height: 100%
+			display: flex
+			flex-direction: column
+
+			.wrapperGroupImg
+				position: relative
+				height: 75px
+				width: 70px
+				border-radius: 50%
+
+				.profileImg
+					border-radius: 60px
+					width: 75px
+					height: 75px
+
+				.actionImgWrapper
+					width: 25px
+					height: 25px
+					border-radius: 50px
+					background-color: #8774e1
+					display: flex
+					justify-content: center
+					align-items: center
+					position: absolute
+					bottom: -5px
+					right: -10px
+
+					&:hover
+						cursor: pointer
+
+					.actionImg
+						font-size: 20px
+						color: #FFFFFF
+
+			.createGroupBtn
+				margin-top: auto
+				width: 100%
+				height: 50px
+				border-radius: 6px
+				background-color: #0c5dff
+				color: #FFFFFF
+				font-size: 18px
+				transition: 0.35s
+
+				&:hover
+					box-shadow: 0 5px 15px 5px rgb(0 0 0 / 30%)
+					cursor: pointer

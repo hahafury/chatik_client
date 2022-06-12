@@ -1,0 +1,145 @@
+.wrapperLoginForm
+	width: 100%
+	max-width: 1100px
+	height: 100%
+	max-height: 700px
+	display: flex
+	margin: auto
+
+	.partLoginForm
+		display: flex
+		margin: auto
+		justify-content: center
+		align-items: center
+		position: relative
+
+		.loginFormContent
+			width: 550px
+			height: 550px
+			display: flex
+			justify-content: center
+			flex-direction: column
+
+			.loginText
+				margin-top: 32px
+
+				.backText
+					font-family: 'Shippori Antique B1', sans-serif
+					font-size: 16px
+					color: black
+
+				.forwardText
+					font-family: 'Shippori Antique B1', sans-serif
+					font-size: 25px
+					color: black
+
+			.loginMenu
+				margin-top: 20px
+
+				form
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+
+					& > div + div
+						margin-top: 16px
+					label
+						color: black
+
+					input
+						width: 100%
+						height: 50px
+						margin-top: 10px
+						padding: 0 16px
+						color: black
+						background-color: transparent
+						border: 1px solid transparent
+						border-bottom: 1px solid white
+						font-family: 'Shippori Antique B1', sans-serif
+
+
+				.passwordAndEmailText
+					font-family: 'Shippori Antique B1', sans-serif
+					color: #4A5568
+					font-size: 16px
+					margin-top: 10px
+
+			.error
+				color: red
+				margin: 0
+				padding: 0
+				font-size: 10px
+				text-transform: uppercase
+
+			.forgotPassword
+				display: flex
+				align-items: center
+				margin-top: 15px
+
+				p
+					color: #4A5568
+					font-family: 'Shippori Antique B1', sans-serif
+					font-size: 14px
+					margin-right: 100px
+
+				a
+					color: rgba(0, 5, 186, 0.8)
+					font-size: 14px
+					text-decoration: underline
+
+			.loginButtons
+				margin-top: 32px!important
+
+				.loginNowButton
+					width: 100%
+					height: 50px
+					border-radius: 6px
+					background-color: #0c5dff
+					color: #FFFFFF
+					font-size: 18px
+					transition: 0.35s
+
+					&:hover
+						box-shadow: 0 5px 15px 5px rgb(0 0 0 / 30%)
+						cursor: pointer
+
+					div
+						height: 100%
+						width: 100%
+
+						img
+							width: 50px
+							height: 100%
+
+					&:disabled
+						background-color: #9cacbf
+
+				.signInWithGoogle
+					width: 100%
+					border-radius: 6px
+					height: 50px
+					background-color: #2D3748
+					color: black
+					margin-top: 12px
+					display: flex
+					align-items: center
+					justify-content: center
+
+				img
+					width: 23px
+					height: 23px
+					padding-right: 10px
+
+			.registrationButton
+				font-family: 'Shippori Antique B1', sans-serif
+				font-size: 16px
+				color: black
+				user-select: none
+				margin-top: auto
+
+				&:hover
+					cursor: pointer
+					text-decoration: underline
+
+				span
+					color: rgba(0, 5, 186, 0.8)

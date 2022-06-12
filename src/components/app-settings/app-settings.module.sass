@@ -1,0 +1,38 @@
+.appSettings
+	width: 300px
+	height: 400px
+	background-color: #FFFFFF
+	border-radius: 0.35rem
+	padding: 16px
+	display: flex
+
+	.appSettingsNav
+		width: 200px
+		height: 100%
+		margin-right: 32px
+
+		.appSettingsNavItem
+			display: flex
+			padding: 16px
+			justify-content: flex-start
+			align-items: center
+			height: 50px
+			box-shadow: 0 2px 2px rgb(0 0 0 / 20%)
+			border-radius: 0.35rem
+			transition: 0.35s
+
+			&:hover
+				transition: 0.35s
+				background-color: #0c5dff
+				color: white
+
+			svg
+				width: 20px
+				height: 20px
+				margin-right: 16px
+
+			& + .appSettingsNavItem
+				margin-top: 16px
+
+	.appSettingsContainer
+		width: calc(100% - 200px)
